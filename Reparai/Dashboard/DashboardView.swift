@@ -65,6 +65,34 @@ struct DashboardView: View {
                             .cornerRadius(12)
                         }
                         
+                        VStack(alignment: .leading, spacing: 12) {
+                            Text("Top 5 Clientes")
+                                .font(.title2).bold()
+                            
+                            VStack {
+                                ForEach(viewModel.topClientes) { cliente in
+                                    TopClienteRowView(cliente: cliente)
+                                }
+                            }
+                            .padding()
+                            .background(Color.white)
+                            .cornerRadius(12)
+                        }
+                        
+                        VStack(alignment: .leading, spacing: 12) {
+                            Text("Top 5 Técnicos")
+                                .font(.title2).bold()
+                            
+                            VStack {
+                                ForEach(viewModel.topTecnicos) { tecnico in
+                                    TopTecnicoRowView(tecnico: tecnico)
+                                }
+                            }
+                            .padding()
+                            .background(Color.white)
+                            .cornerRadius(12)
+                        }
+                        
                     }
                     .padding()
                 }
@@ -194,6 +222,43 @@ struct TopPecaBarView: View {
     }
 }
 
+struct TopClienteRowView: View {
+    let cliente: TopClienteData
+    
+    var body: some View {
+        HStack {
+            VStack(alignment: .leading, spacing: 2) {
+                Text(cliente.nome)
+                    .font(.subheadline)
+                    .fontWeight(.semibold)
+                Text("\(cliente.quantidadeOS) OS")
+                    .font(.caption)
+                    .foregroundColor(.secondary)
+            }
+            Spacer()
+            Text(cliente.totalGasto.formatted(.currency(code: "BRL")))
+                .font(.headline)
+        }
+        .padding(.vertical, 4)
+    }
+}
+
+struct TopTecnicoRowView: View {
+    let tecnico: TopTecnicoData
+    
+    var body: some View {
+        HStack {
+            Text(tecnico.nome)
+                .font(.subheadline)
+                .fontWeight(.semibold)
+            Spacer()
+            Text("\(tecnico.quantidadeServicos) serviços")
+                .font(.headline)
+        }
+        .padding(.vertical, 4)
+    }
+}
+
 extension Date {
     func timeAgoDisplay() -> String {
         let formatter = RelativeDateTimeFormatter()
@@ -214,3 +279,4 @@ extension Date {
         )
     }
 }
+
