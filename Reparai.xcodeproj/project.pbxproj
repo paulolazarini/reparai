@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E0361C762E75C31B00DDE9FA /* OrdensDeServicoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0361C742E75C31B00DDE9FA /* OrdensDeServicoView.swift */; };
+		E0361C782E75CBF600DDE9FA /* OrdensDeServicoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0361C772E75CBF600DDE9FA /* OrdensDeServicoViewModel.swift */; };
+		E0361C7D2E75E30400DDE9FA /* NovaOrdemDeServicoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0361C7C2E75E30400DDE9FA /* NovaOrdemDeServicoView.swift */; };
+		E0361C7F2E75E8D000DDE9FA /* NovaOrdemDeServicoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0361C7E2E75E8D000DDE9FA /* NovaOrdemDeServicoViewModel.swift */; };
+		E0361C822E75FC3400DDE9FA /* OrdemDeServicoDetalhesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0361C812E75FC3400DDE9FA /* OrdemDeServicoDetalhesViewModel.swift */; };
+		E0361C842E75FC3E00DDE9FA /* OrdemDeServicoDetalhesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0361C832E75FC3E00DDE9FA /* OrdemDeServicoDetalhesView.swift */; };
+		E0361C882E76173700DDE9FA /* NovaPecaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0361C872E76173700DDE9FA /* NovaPecaViewModel.swift */; };
+		E0361C8A2E76174000DDE9FA /* NovaPecaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0361C892E76174000DDE9FA /* NovaPecaView.swift */; };
+		E0361C8C2E7617BE00DDE9FA /* EstoqueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0361C8B2E7617BE00DDE9FA /* EstoqueViewModel.swift */; };
+		E0361C8E2E7617C900DDE9FA /* EstoqueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0361C8D2E7617C900DDE9FA /* EstoqueView.swift */; };
+		E0361C912E761CBF00DDE9FA /* EditarPecaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0361C902E761CBF00DDE9FA /* EditarPecaViewModel.swift */; };
+		E0361C932E761CC600DDE9FA /* EditarPecaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0361C922E761CC600DDE9FA /* EditarPecaView.swift */; };
+		E0361C962E76249400DDE9FA /* ClientesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0361C952E76249400DDE9FA /* ClientesViewModel.swift */; };
+		E0361C982E7624BC00DDE9FA /* ClientesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0361C972E7624BC00DDE9FA /* ClientesView.swift */; };
+		E0361C9B2E76250B00DDE9FA /* ClienteFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0361C9A2E76250B00DDE9FA /* ClienteFormViewModel.swift */; };
+		E0361C9D2E76253500DDE9FA /* ClienteFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0361C9C2E76253500DDE9FA /* ClienteFormView.swift */; };
+		E04BEE3E2E7786040033949E /* TecnicosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04BEE3D2E7786040033949E /* TecnicosView.swift */; };
+		E04BEE402E77860A0033949E /* TecnicosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04BEE3F2E77860A0033949E /* TecnicosViewModel.swift */; };
+		E04BEE422E7786140033949E /* TecnicoFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04BEE412E7786140033949E /* TecnicoFormView.swift */; };
+		E04BEE442E7786180033949E /* TecnicoFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04BEE432E7786180033949E /* TecnicoFormViewModel.swift */; };
+		E0516DBF2E74C9A800317172 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0516DB42E74C9A800317172 /* Assets.xcassets */; };
+		E0516DC02E74C9A800317172 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0516DB62E74C9A800317172 /* LaunchScreen.storyboard */; };
+		E0516DC22E74C9A800317172 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0516DB32E74C9A800317172 /* AppDelegate.swift */; };
+		E0516DC32E74C9A800317172 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0516DB72E74C9A800317172 /* SceneDelegate.swift */; };
+		E0516DC42E74C9A800317172 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0516DB92E74C9A800317172 /* DashboardView.swift */; };
+		E0516DC52E74C9A800317172 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0516DBB2E74C9A800317172 /* AppCoordinator.swift */; };
+		E0516DC62E74C9A800317172 /* TabBarPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0516DBD2E74C9A800317172 /* TabBarPage.swift */; };
+		E0516DD42E74E37A00317172 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0516DD32E74E37A00317172 /* DashboardViewModel.swift */; };
+		E06AD1712E74C238000581AF /* NetworkCore in Frameworks */ = {isa = PBXBuildFile; productRef = E06AD1702E74C238000581AF /* NetworkCore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E0361C742E75C31B00DDE9FA /* OrdensDeServicoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdensDeServicoView.swift; sourceTree = "<group>"; };
+		E0361C772E75CBF600DDE9FA /* OrdensDeServicoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdensDeServicoViewModel.swift; sourceTree = "<group>"; };
+		E0361C7C2E75E30400DDE9FA /* NovaOrdemDeServicoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaOrdemDeServicoView.swift; sourceTree = "<group>"; };
+		E0361C7E2E75E8D000DDE9FA /* NovaOrdemDeServicoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaOrdemDeServicoViewModel.swift; sourceTree = "<group>"; };
+		E0361C812E75FC3400DDE9FA /* OrdemDeServicoDetalhesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdemDeServicoDetalhesViewModel.swift; sourceTree = "<group>"; };
+		E0361C832E75FC3E00DDE9FA /* OrdemDeServicoDetalhesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdemDeServicoDetalhesView.swift; sourceTree = "<group>"; };
+		E0361C872E76173700DDE9FA /* NovaPecaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaPecaViewModel.swift; sourceTree = "<group>"; };
+		E0361C892E76174000DDE9FA /* NovaPecaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaPecaView.swift; sourceTree = "<group>"; };
+		E0361C8B2E7617BE00DDE9FA /* EstoqueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstoqueViewModel.swift; sourceTree = "<group>"; };
+		E0361C8D2E7617C900DDE9FA /* EstoqueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstoqueView.swift; sourceTree = "<group>"; };
+		E0361C902E761CBF00DDE9FA /* EditarPecaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarPecaViewModel.swift; sourceTree = "<group>"; };
+		E0361C922E761CC600DDE9FA /* EditarPecaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarPecaView.swift; sourceTree = "<group>"; };
+		E0361C952E76249400DDE9FA /* ClientesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientesViewModel.swift; sourceTree = "<group>"; };
+		E0361C972E7624BC00DDE9FA /* ClientesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientesView.swift; sourceTree = "<group>"; };
+		E0361C9A2E76250B00DDE9FA /* ClienteFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClienteFormViewModel.swift; sourceTree = "<group>"; };
+		E0361C9C2E76253500DDE9FA /* ClienteFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClienteFormView.swift; sourceTree = "<group>"; };
+		E04BEE3D2E7786040033949E /* TecnicosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TecnicosView.swift; sourceTree = "<group>"; };
+		E04BEE3F2E77860A0033949E /* TecnicosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TecnicosViewModel.swift; sourceTree = "<group>"; };
+		E04BEE412E7786140033949E /* TecnicoFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TecnicoFormView.swift; sourceTree = "<group>"; };
+		E04BEE432E7786180033949E /* TecnicoFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TecnicoFormViewModel.swift; sourceTree = "<group>"; };
+		E0516DB32E74C9A800317172 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E0516DB42E74C9A800317172 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E0516DB52E74C9A800317172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E0516DB72E74C9A800317172 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E0516DB92E74C9A800317172 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		E0516DBB2E74C9A800317172 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		E0516DBC2E74C9A800317172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0516DBD2E74C9A800317172 /* TabBarPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarPage.swift; sourceTree = "<group>"; };
+		E0516DD32E74E37A00317172 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		E0BD63932E74A495002D8A49 /* Repar.ai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Repar.ai.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E0BD63902E74A495002D8A49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E06AD1712E74C238000581AF /* NetworkCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E0361C752E75C31B00DDE9FA /* Ordem de Serviço */ = {
+			isa = PBXGroup;
+			children = (
+				E0361C772E75CBF600DDE9FA /* OrdensDeServicoViewModel.swift */,
+				E0361C742E75C31B00DDE9FA /* OrdensDeServicoView.swift */,
+			);
+			path = "Ordem de Serviço";
+			sourceTree = "<group>";
+		};
+		E0361C792E75DC2400DDE9FA /* Nova Ordem de Serviço */ = {
+			isa = PBXGroup;
+			children = (
+				E0361C7E2E75E8D000DDE9FA /* NovaOrdemDeServicoViewModel.swift */,
+				E0361C7C2E75E30400DDE9FA /* NovaOrdemDeServicoView.swift */,
+			);
+			name = "Nova Ordem de Serviço";
+			path = "Nova Ordem de Serviço";
+			sourceTree = "<group>";
+		};
+		E0361C802E75FC2900DDE9FA /* Detalhes Ordem De Serviço */ = {
+			isa = PBXGroup;
+			children = (
+				E0361C832E75FC3E00DDE9FA /* OrdemDeServicoDetalhesView.swift */,
+				E0361C812E75FC3400DDE9FA /* OrdemDeServicoDetalhesViewModel.swift */,
+			);
+			name = "Detalhes Ordem De Serviço";
+			path = "Detalhes Ordem De Serviço";
+			sourceTree = "<group>";
+		};
+		E0361C852E76171B00DDE9FA /* Estoque */ = {
+			isa = PBXGroup;
+			children = (
+				E0361C8D2E7617C900DDE9FA /* EstoqueView.swift */,
+				E0361C8B2E7617BE00DDE9FA /* EstoqueViewModel.swift */,
+			);
+			path = Estoque;
+			sourceTree = "<group>";
+		};
+		E0361C862E76172400DDE9FA /* Nova Peça */ = {
+			isa = PBXGroup;
+			children = (
+				E0361C892E76174000DDE9FA /* NovaPecaView.swift */,
+				E0361C872E76173700DDE9FA /* NovaPecaViewModel.swift */,
+			);
+			name = "Nova Peça";
+			path = "Nova Peça";
+			sourceTree = "<group>";
+		};
+		E0361C8F2E761CB500DDE9FA /* Editar Peça */ = {
+			isa = PBXGroup;
+			children = (
+				E0361C922E761CC600DDE9FA /* EditarPecaView.swift */,
+				E0361C902E761CBF00DDE9FA /* EditarPecaViewModel.swift */,
+			);
+			name = "Editar Peça";
+			path = "Editar Peça";
+			sourceTree = "<group>";
+		};
+		E0361C942E76249200DDE9FA /* Cliente */ = {
+			isa = PBXGroup;
+			children = (
+				E0361C972E7624BC00DDE9FA /* ClientesView.swift */,
+				E0361C952E76249400DDE9FA /* ClientesViewModel.swift */,
+			);
+			path = Cliente;
+			sourceTree = "<group>";
+		};
+		E0361C992E7624FB00DDE9FA /* Edicao & Criacao Cliente */ = {
+			isa = PBXGroup;
+			children = (
+				E0361C9C2E76253500DDE9FA /* ClienteFormView.swift */,
+				E0361C9A2E76250B00DDE9FA /* ClienteFormViewModel.swift */,
+			);
+			path = "Edicao & Criacao Cliente";
+			sourceTree = "<group>";
+		};
+		E04BEE3B2E7785EC0033949E /* Técnico */ = {
+			isa = PBXGroup;
+			children = (
+				E04BEE3F2E77860A0033949E /* TecnicosViewModel.swift */,
+				E04BEE3D2E7786040033949E /* TecnicosView.swift */,
+			);
+			name = "Técnico";
+			path = "Técnico";
+			sourceTree = "<group>";
+		};
+		E04BEE3C2E7785F80033949E /* Edicao & Criacao Técnico */ = {
+			isa = PBXGroup;
+			children = (
+				E04BEE432E7786180033949E /* TecnicoFormViewModel.swift */,
+				E04BEE412E7786140033949E /* TecnicoFormView.swift */,
+			);
+			name = "Edicao & Criacao Técnico";
+			path = "Edicao & Criacao Técnico";
+			sourceTree = "<group>";
+		};
+		E0516DB82E74C9A800317172 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E0516DB32E74C9A800317172 /* AppDelegate.swift */,
+				E0516DB42E74C9A800317172 /* Assets.xcassets */,
+				E0516DB62E74C9A800317172 /* LaunchScreen.storyboard */,
+				E0516DB72E74C9A800317172 /* SceneDelegate.swift */,
+				E0516DBC2E74C9A800317172 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		E0516DBA2E74C9A800317172 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				E0516DD32E74E37A00317172 /* DashboardViewModel.swift */,
+				E0516DB92E74C9A800317172 /* DashboardView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		E0516DBE2E74C9A800317172 /* Reparai */ = {
+			isa = PBXGroup;
+			children = (
+				E04BEE3C2E7785F80033949E /* Edicao & Criacao Técnico */,
+				E04BEE3B2E7785EC0033949E /* Técnico */,
+				E0361C992E7624FB00DDE9FA /* Edicao & Criacao Cliente */,
+				E0361C942E76249200DDE9FA /* Cliente */,
+				E0361C8F2E761CB500DDE9FA /* Editar Peça */,
+				E0361C862E76172400DDE9FA /* Nova Peça */,
+				E0361C852E76171B00DDE9FA /* Estoque */,
+				E0361C802E75FC2900DDE9FA /* Detalhes Ordem De Serviço */,
+				E0361C792E75DC2400DDE9FA /* Nova Ordem de Serviço */,
+				E0361C752E75C31B00DDE9FA /* Ordem de Serviço */,
+				E0516DBA2E74C9A800317172 /* Dashboard */,
+				E0516DBB2E74C9A800317172 /* AppCoordinator.swift */,
+				E0516DBD2E74C9A800317172 /* TabBarPage.swift */,
+				E0516DB82E74C9A800317172 /* Application */,
+			);
+			path = Reparai;
+			sourceTree = "<group>";
+		};
+		E06AD16F2E74C238000581AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0BD638A2E74A495002D8A49 = {
+			isa = PBXGroup;
+			children = (
+				E0516DBE2E74C9A800317172 /* Reparai */,
+				E06AD16F2E74C238000581AF /* Frameworks */,
+				E0BD63942E74A495002D8A49 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E0BD63942E74A495002D8A49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0BD63932E74A495002D8A49 /* Repar.ai.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E0BD63922E74A495002D8A49 /* Repar.ai */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0BD63A62E74A496002D8A49 /* Build configuration list for PBXNativeTarget "Repar.ai" */;
+			buildPhases = (
+				E0BD638F2E74A495002D8A49 /* Sources */,
+				E0BD63902E74A495002D8A49 /* Frameworks */,
+				E0BD63912E74A495002D8A49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Repar.ai;
+			packageProductDependencies = (
+				E06AD1702E74C238000581AF /* NetworkCore */,
+			);
+			productName = Repar.ai;
+			productReference = E0BD63932E74A495002D8A49 /* Repar.ai.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E0BD638B2E74A495002D8A49 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					E0BD63922E74A495002D8A49 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = E0BD638E2E74A495002D8A49 /* Build configuration list for PBXProject "Reparai" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E0BD638A2E74A495002D8A49;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E0BD63942E74A495002D8A49 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0BD63922E74A495002D8A49 /* Repar.ai */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E0BD63912E74A495002D8A49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0516DBF2E74C9A800317172 /* Assets.xcassets in Resources */,
+				E0516DC02E74C9A800317172 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E0BD638F2E74A495002D8A49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0361C932E761CC600DDE9FA /* EditarPecaView.swift in Sources */,
+				E0361C782E75CBF600DDE9FA /* OrdensDeServicoViewModel.swift in Sources */,
+				E0516DD42E74E37A00317172 /* DashboardViewModel.swift in Sources */,
+				E0361C8C2E7617BE00DDE9FA /* EstoqueViewModel.swift in Sources */,
+				E0361C762E75C31B00DDE9FA /* OrdensDeServicoView.swift in Sources */,
+				E0516DC22E74C9A800317172 /* AppDelegate.swift in Sources */,
+				E04BEE402E77860A0033949E /* TecnicosViewModel.swift in Sources */,
+				E0516DC32E74C9A800317172 /* SceneDelegate.swift in Sources */,
+				E0361C8A2E76174000DDE9FA /* NovaPecaView.swift in Sources */,
+				E0361C9B2E76250B00DDE9FA /* ClienteFormViewModel.swift in Sources */,
+				E0361C7D2E75E30400DDE9FA /* NovaOrdemDeServicoView.swift in Sources */,
+				E0361C842E75FC3E00DDE9FA /* OrdemDeServicoDetalhesView.swift in Sources */,
+				E04BEE442E7786180033949E /* TecnicoFormViewModel.swift in Sources */,
+				E0516DC42E74C9A800317172 /* DashboardView.swift in Sources */,
+				E04BEE3E2E7786040033949E /* TecnicosView.swift in Sources */,
+				E0361C962E76249400DDE9FA /* ClientesViewModel.swift in Sources */,
+				E0361C7F2E75E8D000DDE9FA /* NovaOrdemDeServicoViewModel.swift in Sources */,
+				E0516DC52E74C9A800317172 /* AppCoordinator.swift in Sources */,
+				E0361C912E761CBF00DDE9FA /* EditarPecaViewModel.swift in Sources */,
+				E0516DC62E74C9A800317172 /* TabBarPage.swift in Sources */,
+				E0361C8E2E7617C900DDE9FA /* EstoqueView.swift in Sources */,
+				E04BEE422E7786140033949E /* TecnicoFormView.swift in Sources */,
+				E0361C882E76173700DDE9FA /* NovaPecaViewModel.swift in Sources */,
+				E0361C822E75FC3400DDE9FA /* OrdemDeServicoDetalhesViewModel.swift in Sources */,
+				E0361C982E7624BC00DDE9FA /* ClientesView.swift in Sources */,
+				E0361C9D2E76253500DDE9FA /* ClienteFormView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E0516DB62E74C9A800317172 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0516DB52E74C9A800317172 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E0BD63A72E74A496002D8A49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H348674NXB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Reparai/Application/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = repar.ai;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paulolazarini.Repar-ai";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E0BD63A82E74A496002D8A49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H348674NXB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Reparai/Application/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = repar.ai;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paulolazarini.Repar-ai";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E0BD63A92E74A496002D8A49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E0BD63AA2E74A496002D8A49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E0BD638E2E74A495002D8A49 /* Build configuration list for PBXProject "Reparai" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0BD63A92E74A496002D8A49 /* Debug */,
+				E0BD63AA2E74A496002D8A49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0BD63A62E74A496002D8A49 /* Build configuration list for PBXNativeTarget "Repar.ai" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0BD63A72E74A496002D8A49 /* Debug */,
+				E0BD63A82E74A496002D8A49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E06AD1702E74C238000581AF /* NetworkCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NetworkCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E0BD638B2E74A495002D8A49 /* Project object */;
+}
