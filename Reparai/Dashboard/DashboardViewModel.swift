@@ -9,25 +9,6 @@ import SwiftUI
 import Combine
 import NetworkCore
 
-struct TopPecaData: Identifiable {
-    let id = UUID()
-    let nome: String
-    let quantidade: Int
-}
-
-struct TopClienteData: Identifiable {
-    let id = UUID()
-    let nome: String
-    let totalGasto: Decimal
-    let quantidadeOS: Int
-}
-
-struct TopTecnicoData: Identifiable {
-    let id = UUID()
-    let nome: String
-    let quantidadeServicos: Int
-}
-
 @MainActor
 final class DashboardViewModel: ObservableObject {
     @Published var totalOSMes: Int = 0
@@ -35,9 +16,9 @@ final class DashboardViewModel: ObservableObject {
     @Published var emAndamentoCount: Int = 0
     @Published var faturamentoMensal: Decimal = 0
     @Published var atividadesRecentes: [OrdemDeServico] = []
-    @Published var topPecas: [TopPecaData] = []
-    @Published var topClientes: [TopClienteData] = []
-    @Published var topTecnicos: [TopTecnicoData] = []
+    @Published var topPecas: [TopPecaReport] = []
+    @Published var topClientes: [TopClienteReport] = []
+    @Published var topTecnicos: [TopTecnicoReport] = []
     @Published var isLoading = false
     
     private let networkManager: NetworkManagerProtocol
@@ -59,12 +40,11 @@ final class DashboardViewModel: ObservableObject {
         isLoading = true
         
         async let ordensResult = networkManager.fetchOrdensDeServico()
-        async let itensResult = networkManager.fetchAllItens()
-        async let pecasResult = networkManager.fetchPecasEstoque()
-        async let clientesResult = networkManager.fetchAllClientes()
-        async let tecnicosResult = networkManager.fetchAllTecnicos()
+        async let topPecasResult = networkManager.fetchTopPecas(limit: 5)
+        async let topClientesResult = networkManager.fetchTopClientes(limit: 5)
+        async let topTecnicosResult = networkManager.fetchTopTecnicos(limit: 5)
         
-        let (ordens, itens, pecas, clientes, tecnicos) = await (ordensResult, itensResult, pecasResult, clientesResult, tecnicosResult)
+        let (ordens, topPecasResp, topClientesResp, topTecnicosResp) = await (ordensResult, topPecasResult, topClientesResult, topTecnicosResult)
         
         isLoading = false
         
@@ -86,72 +66,23 @@ final class DashboardViewModel: ObservableObject {
             
             atividadesRecentes = Array(ordensList.sorted(by: { $0.dataEntrada > $1.dataEntrada }).prefix(3))
             
-            if case .success(let todosOsItens) = itens, case .success(let todasAsPecas) = pecas {
-                calcularTopPecas(itens: todosOsItens, pecas: todasAsPecas)
-            }
-            
-            if case .success(let todosOsClientes) = clientes {
-                calcularTopClientes(ordens: ordensList, clientes: todosOsClientes)
-            }
-            
-            if case .success(let todosOsTecnicos) = tecnicos {
-                calcularTopTecnicos(ordens: ordensList, tecnicos: todosOsTecnicos)
-            }
-            
         case .failure(let error):
-            print("❌ Erro ao buscar dados do dashboard (ordens): \(error.localizedDescription)")
-        }
-    }
-    
-    private func calcularTopPecas(itens: [OrcamentoItem], pecas: [PecaEstoque]) {
-        var contagem: [String: Int] = [:]
-        
-        for item in itens {
-            if let pecaId = item.pecaId {
-                contagem[pecaId, default: 0] += item.quantidade
-            }
+            print("❌ Erro ao buscar ordens: \(error.localizedDescription)")
         }
         
-        let top5Ids = contagem.sorted { $0.value > $1.value }.prefix(5)
-        
-        self.topPecas = top5Ids.compactMap { pecaId, quantidade in
-            guard let pecaInfo = pecas.first(where: { $0.id == pecaId }) else {
-                return nil
-            }
-            return TopPecaData(nome: pecaInfo.nomePeca, quantidade: quantidade)
-        }
-    }
-    
-    private func calcularTopClientes(ordens: [OrdemDeServico], clientes: [Cliente]) {
-        var totalPorCliente: [String: (total: Decimal, count: Int)] = [:]
-        
-        for os in ordens {
-            guard (os.status == .finalizado || os.status == .entregue), let valor = os.valorTotal else { continue }
-            let atual = totalPorCliente[os.clienteId] ?? (0, 0)
-            totalPorCliente[os.clienteId] = (atual.total + valor, atual.count + 1)
+        // Top Peças
+        if case .success(let pecas) = topPecasResp {
+            self.topPecas = pecas
         }
         
-        let top5 = totalPorCliente.sorted { $0.value.total > $1.value.total }.prefix(5)
-        
-        self.topClientes = top5.compactMap { clienteId, agregado in
-            let nome = clientes.first(where: { $0.id == clienteId })?.nomeCompleto ?? "Cliente desconhecido"
-            return TopClienteData(nome: nome, totalGasto: agregado.total, quantidadeOS: agregado.count)
-        }
-    }
-    
-    private func calcularTopTecnicos(ordens: [OrdemDeServico], tecnicos: [Tecnico]) {
-        var contagem: [String: Int] = [:]
-        
-        for os in ordens {
-            guard (os.status == .finalizado || os.status == .entregue), let tecnicoId = os.tecnicoId else { continue }
-            contagem[tecnicoId, default: 0] += 1
+        // Top Clientes
+        if case .success(let clientes) = topClientesResp {
+            self.topClientes = clientes
         }
         
-        let top5 = contagem.sorted { $0.value > $1.value }.prefix(5)
-        
-        self.topTecnicos = top5.compactMap { tecnicoId, quantidade in
-            let nome = tecnicos.first(where: { $0.id == tecnicoId })?.nomeCompleto ?? "Técnico desconhecido"
-            return TopTecnicoData(nome: nome, quantidadeServicos: quantidade)
+        // Top Técnicos
+        if case .success(let tecnicos) = topTecnicosResp {
+            self.topTecnicos = tecnicos
         }
     }
     
@@ -167,3 +98,4 @@ final class DashboardViewModel: ObservableObject {
         }
     }
 }
+

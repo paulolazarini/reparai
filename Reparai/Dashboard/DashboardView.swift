@@ -193,12 +193,12 @@ struct AtividadeRecenteRowView: View {
 }
 
 struct TopPecaBarView: View {
-    let peca: TopPecaData
+    let peca: TopPecaReport
     let valorMaximo: Int
     
     var body: some View {
         HStack {
-            Text(peca.nome)
+            Text(peca.nomePeca)
                 .font(.subheadline)
                 .frame(width: 80, alignment: .leading)
             
@@ -223,15 +223,15 @@ struct TopPecaBarView: View {
 }
 
 struct TopClienteRowView: View {
-    let cliente: TopClienteData
+    let cliente: TopClienteReport
     
     var body: some View {
         HStack {
             VStack(alignment: .leading, spacing: 2) {
-                Text(cliente.nome)
+                Text(cliente.nomeCliente ?? "Sem nome")
                     .font(.subheadline)
                     .fontWeight(.semibold)
-                Text("\(cliente.quantidadeOS) OS")
+                Text("\(cliente.quantidadeOs) OS")
                     .font(.caption)
                     .foregroundColor(.secondary)
             }
@@ -244,11 +244,11 @@ struct TopClienteRowView: View {
 }
 
 struct TopTecnicoRowView: View {
-    let tecnico: TopTecnicoData
+    let tecnico: TopTecnicoReport
     
     var body: some View {
         HStack {
-            Text(tecnico.nome)
+            Text(tecnico.nomeTecnico ?? "Sem nome")
                 .font(.subheadline)
                 .fontWeight(.semibold)
             Spacer()
