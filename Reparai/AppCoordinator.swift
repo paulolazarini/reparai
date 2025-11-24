@@ -27,7 +27,7 @@ final class AppCoordinator: NSObject, @preconcurrency Coordinator {
     let tabBarController: UITabBarController
     
     private let navigationEvents = PassthroughSubject<NavigationEvents, Never>()
-    private let networkManager: NetworkManagerProtocol = SupabaseNetworkManager()
+    private let networkManager: NetworkManagerProtocol = FirebaseNetworkManager()
     private var cancelSet = Set<AnyCancellable>()
     
     init(navigationController: UINavigationController) {
