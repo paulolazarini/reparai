@@ -6,9 +6,10 @@
 ### 1. Clonar o Projeto
 Abra o aplicativo Terminal e execute os comandos:
 
-bash
+``` bash 
 git clone [https://github.com/paulolazarini/reparai.git](https://github.com/paulolazarini/reparai.git)
 cd reparai
+```
 
 
 ### 2. Abrir no Xcode
