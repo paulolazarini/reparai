@@ -7,7 +7,7 @@
 Abra o aplicativo Terminal e execute os comandos:
 
 ``` bash 
-git clone [https://github.com/paulolazarini/reparai.git](https://github.com/paulolazarini/reparai.git)
+git clone https://github.com/paulolazarini/reparai.git
 cd reparai
 ```
 
