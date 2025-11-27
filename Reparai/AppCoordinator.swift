@@ -8,7 +8,6 @@
 import UIKit
 import SwiftUI
 import Combine
-import NetworkCore
 
 enum NavigationEvents {
     case novaOrdemDeServico

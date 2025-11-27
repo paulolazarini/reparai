@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import NetworkCore
 
 @MainActor
 final class TecnicoFormViewModel: ObservableObject {

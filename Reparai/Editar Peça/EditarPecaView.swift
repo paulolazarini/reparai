@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import NetworkCore
+
 
 struct EditarPecaView: View {
     

@@ -7,7 +7,6 @@
 
 
 import SwiftUI
-import NetworkCore
 
 struct ClientesView: View {
     

@@ -7,7 +7,6 @@
 
 import SwiftUI
 import Combine
-import NetworkCore
 
 struct OrdensDeServicoView: View {
     @ObservedObject var viewModel: OrdensDeServicoViewModel

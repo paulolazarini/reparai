@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import NetworkCore
 import FirebaseFirestore
 
 class FirebaseSeeder {

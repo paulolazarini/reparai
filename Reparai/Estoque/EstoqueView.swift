@@ -7,7 +7,6 @@
 
 import SwiftUI
 import Combine
-import NetworkCore
 
 struct EstoqueView: View {
     

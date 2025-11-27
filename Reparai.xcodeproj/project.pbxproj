@@ -35,12 +35,28 @@
 		E0516DC52E74C9A800317172 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0516DBB2E74C9A800317172 /* AppCoordinator.swift */; };
 		E0516DC62E74C9A800317172 /* TabBarPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0516DBD2E74C9A800317172 /* TabBarPage.swift */; };
 		E0516DD42E74E37A00317172 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0516DD32E74E37A00317172 /* DashboardViewModel.swift */; };
-		E06AD1712E74C238000581AF /* NetworkCore in Frameworks */ = {isa = PBXBuildFile; productRef = E06AD1702E74C238000581AF /* NetworkCore */; };
 		E073E7B22ED3E5CE00006F1F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E073E7B12ED3E5CE00006F1F /* GoogleService-Info.plist */; };
 		E073E7B52ED3E71A00006F1F /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = E073E7B42ED3E71A00006F1F /* FirebaseCore */; };
 		E073E7B72ED3E71A00006F1F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E073E7B62ED3E71A00006F1F /* FirebaseFirestore */; };
 		E073E7B92ED3ED1300006F1F /* FirebaseSeeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E073E7B82ED3ED1300006F1F /* FirebaseSeeder.swift */; };
 		E073E7BB2ED3ED1F00006F1F /* SeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E073E7BA2ED3ED1F00006F1F /* SeedView.swift */; };
+		E0CA93312ED90C980024F908 /* NetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CA93272ED90C980024F908 /* NetworkManagerProtocol.swift */; };
+		E0CA93322ED90C980024F908 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CA932D2ED90C980024F908 /* Endpoint.swift */; };
+		E0CA93332ED90C980024F908 /* HTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CA932E2ED90C980024F908 /* HTTPService.swift */; };
+		E0CA93342ED90C980024F908 /* TopTecnicoReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CA93242ED90C980024F908 /* TopTecnicoReport.swift */; };
+		E0CA93352ED90C980024F908 /* Cliente.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CA931B2ED90C980024F908 /* Cliente.swift */; };
+		E0CA93362ED90C980024F908 /* PecaEstoque.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CA931F2ED90C980024F908 /* PecaEstoque.swift */; };
+		E0CA93372ED90C980024F908 /* TopClienteReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CA93222ED90C980024F908 /* TopClienteReport.swift */; };
+		E0CA93382ED90C980024F908 /* CreateClienteRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CA931C2ED90C980024F908 /* CreateClienteRequest.swift */; };
+		E0CA93392ED90C980024F908 /* TopPecaReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CA93232ED90C980024F908 /* TopPecaReport.swift */; };
+		E0CA933A2ED90C980024F908 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CA932F2ED90C980024F908 /* RequestError.swift */; };
+		E0CA933B2ED90C980024F908 /* OrcamentoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CA931D2ED90C980024F908 /* OrcamentoItem.swift */; };
+		E0CA933C2ED90C980024F908 /* OrdemDeServico.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CA931E2ED90C980024F908 /* OrdemDeServico.swift */; };
+		E0CA933D2ED90C980024F908 /* FirebaseNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CA93262ED90C980024F908 /* FirebaseNetworkManager.swift */; };
+		E0CA933E2ED90C980024F908 /* StatusOrdemDeServico.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CA93202ED90C980024F908 /* StatusOrdemDeServico.swift */; };
+		E0CA933F2ED90C980024F908 /* ReparaiEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CA932A2ED90C980024F908 /* ReparaiEndpoint.swift */; };
+		E0CA93402ED90C980024F908 /* Tecnico.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CA93212ED90C980024F908 /* Tecnico.swift */; };
+		E0CA93412ED90C980024F908 /* SupabaseNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CA93282ED90C980024F908 /* SupabaseNetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +93,23 @@
 		E073E7B82ED3ED1300006F1F /* FirebaseSeeder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseSeeder.swift; sourceTree = "<group>"; };
 		E073E7BA2ED3ED1F00006F1F /* SeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedView.swift; sourceTree = "<group>"; };
 		E0BD63932E74A495002D8A49 /* Repar.ai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Repar.ai.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0CA931B2ED90C980024F908 /* Cliente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cliente.swift; sourceTree = "<group>"; };
+		E0CA931C2ED90C980024F908 /* CreateClienteRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateClienteRequest.swift; sourceTree = "<group>"; };
+		E0CA931D2ED90C980024F908 /* OrcamentoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrcamentoItem.swift; sourceTree = "<group>"; };
+		E0CA931E2ED90C980024F908 /* OrdemDeServico.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdemDeServico.swift; sourceTree = "<group>"; };
+		E0CA931F2ED90C980024F908 /* PecaEstoque.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PecaEstoque.swift; sourceTree = "<group>"; };
+		E0CA93202ED90C980024F908 /* StatusOrdemDeServico.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusOrdemDeServico.swift; sourceTree = "<group>"; };
+		E0CA93212ED90C980024F908 /* Tecnico.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tecnico.swift; sourceTree = "<group>"; };
+		E0CA93222ED90C980024F908 /* TopClienteReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopClienteReport.swift; sourceTree = "<group>"; };
+		E0CA93232ED90C980024F908 /* TopPecaReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPecaReport.swift; sourceTree = "<group>"; };
+		E0CA93242ED90C980024F908 /* TopTecnicoReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTecnicoReport.swift; sourceTree = "<group>"; };
+		E0CA93262ED90C980024F908 /* FirebaseNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseNetworkManager.swift; sourceTree = "<group>"; };
+		E0CA93272ED90C980024F908 /* NetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocol.swift; sourceTree = "<group>"; };
+		E0CA93282ED90C980024F908 /* SupabaseNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseNetworkManager.swift; sourceTree = "<group>"; };
+		E0CA932A2ED90C980024F908 /* ReparaiEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReparaiEndpoint.swift; sourceTree = "<group>"; };
+		E0CA932D2ED90C980024F908 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		E0CA932E2ED90C980024F908 /* HTTPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPService.swift; sourceTree = "<group>"; };
+		E0CA932F2ED90C980024F908 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +118,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E073E7B52ED3E71A00006F1F /* FirebaseCore in Frameworks */,
-				E06AD1712E74C238000581AF /* NetworkCore in Frameworks */,
 				E073E7B72ED3E71A00006F1F /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +245,7 @@
 		E0516DBE2E74C9A800317172 /* Reparai */ = {
 			isa = PBXGroup;
 			children = (
+				E0CA931A2ED90C880024F908 /* Network */,
 				E073E7BA2ED3ED1F00006F1F /* SeedView.swift */,
 				E073E7B82ED3ED1300006F1F /* FirebaseSeeder.swift */,
 				E04BEE3C2E7785F80033949E /* Edicao & Criacao Técnico */,
@@ -258,6 +291,70 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		E0CA931A2ED90C880024F908 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E0CA93252ED90C980024F908 /* Model */,
+				E0CA932C2ED90C980024F908 /* Network */,
+				E0CA93302ED90C980024F908 /* Utils */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E0CA93252ED90C980024F908 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E0CA931B2ED90C980024F908 /* Cliente.swift */,
+				E0CA931C2ED90C980024F908 /* CreateClienteRequest.swift */,
+				E0CA931D2ED90C980024F908 /* OrcamentoItem.swift */,
+				E0CA931E2ED90C980024F908 /* OrdemDeServico.swift */,
+				E0CA931F2ED90C980024F908 /* PecaEstoque.swift */,
+				E0CA93202ED90C980024F908 /* StatusOrdemDeServico.swift */,
+				E0CA93212ED90C980024F908 /* Tecnico.swift */,
+				E0CA93222ED90C980024F908 /* TopClienteReport.swift */,
+				E0CA93232ED90C980024F908 /* TopPecaReport.swift */,
+				E0CA93242ED90C980024F908 /* TopTecnicoReport.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E0CA93292ED90C980024F908 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E0CA93262ED90C980024F908 /* FirebaseNetworkManager.swift */,
+				E0CA93272ED90C980024F908 /* NetworkManagerProtocol.swift */,
+				E0CA93282ED90C980024F908 /* SupabaseNetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		E0CA932B2ED90C980024F908 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				E0CA932A2ED90C980024F908 /* ReparaiEndpoint.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		E0CA932C2ED90C980024F908 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E0CA93292ED90C980024F908 /* Manager */,
+				E0CA932B2ED90C980024F908 /* Request */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E0CA93302ED90C980024F908 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E0CA932D2ED90C980024F908 /* Endpoint.swift */,
+				E0CA932E2ED90C980024F908 /* HTTPService.swift */,
+				E0CA932F2ED90C980024F908 /* RequestError.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -275,7 +372,6 @@
 			);
 			name = Repar.ai;
 			packageProductDependencies = (
-				E06AD1702E74C238000581AF /* NetworkCore */,
 				E073E7B42ED3E71A00006F1F /* FirebaseCore */,
 				E073E7B62ED3E71A00006F1F /* FirebaseFirestore */,
 			);
@@ -352,6 +448,23 @@
 				E0361C7D2E75E30400DDE9FA /* NovaOrdemDeServicoView.swift in Sources */,
 				E0361C842E75FC3E00DDE9FA /* OrdemDeServicoDetalhesView.swift in Sources */,
 				E073E7BB2ED3ED1F00006F1F /* SeedView.swift in Sources */,
+				E0CA93312ED90C980024F908 /* NetworkManagerProtocol.swift in Sources */,
+				E0CA93322ED90C980024F908 /* Endpoint.swift in Sources */,
+				E0CA93332ED90C980024F908 /* HTTPService.swift in Sources */,
+				E0CA93342ED90C980024F908 /* TopTecnicoReport.swift in Sources */,
+				E0CA93352ED90C980024F908 /* Cliente.swift in Sources */,
+				E0CA93362ED90C980024F908 /* PecaEstoque.swift in Sources */,
+				E0CA93372ED90C980024F908 /* TopClienteReport.swift in Sources */,
+				E0CA93382ED90C980024F908 /* CreateClienteRequest.swift in Sources */,
+				E0CA93392ED90C980024F908 /* TopPecaReport.swift in Sources */,
+				E0CA933A2ED90C980024F908 /* RequestError.swift in Sources */,
+				E0CA933B2ED90C980024F908 /* OrcamentoItem.swift in Sources */,
+				E0CA933C2ED90C980024F908 /* OrdemDeServico.swift in Sources */,
+				E0CA933D2ED90C980024F908 /* FirebaseNetworkManager.swift in Sources */,
+				E0CA933E2ED90C980024F908 /* StatusOrdemDeServico.swift in Sources */,
+				E0CA933F2ED90C980024F908 /* ReparaiEndpoint.swift in Sources */,
+				E0CA93402ED90C980024F908 /* Tecnico.swift in Sources */,
+				E0CA93412ED90C980024F908 /* SupabaseNetworkManager.swift in Sources */,
 				E04BEE442E7786180033949E /* TecnicoFormViewModel.swift in Sources */,
 				E0516DC42E74C9A800317172 /* DashboardView.swift in Sources */,
 				E04BEE3E2E7786040033949E /* TecnicosView.swift in Sources */,
@@ -597,10 +710,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E06AD1702E74C238000581AF /* NetworkCore */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = NetworkCore;
-		};
 		E073E7B42ED3E71A00006F1F /* FirebaseCore */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E073E7B32ED3E71A00006F1F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

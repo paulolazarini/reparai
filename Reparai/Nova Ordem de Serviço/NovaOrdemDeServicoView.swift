@@ -7,7 +7,6 @@
 
 import SwiftUI
 import Combine
-import NetworkCore
 
 enum TipoEquipamento: String, CaseIterable, Identifiable {
     case celular = "Celular"

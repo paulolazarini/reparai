@@ -7,7 +7,6 @@
 
 import SwiftUI
 import Combine
-import NetworkCore
 
 struct DashboardView: View {
     @ObservedObject var viewModel: DashboardViewModel
